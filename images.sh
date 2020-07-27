@@ -10,13 +10,13 @@ do
 
     mogrify -format webp -path dist/media/ -quality 82 -define webp:lossless=true -define webp:auto-filter=true  $f
 
-    convert $f -resize 300 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "media/$fileName-300.webp"
+    convert $f -resize 300 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "images/$fileName-300.webp"
 
-    convert $f -resize 600 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "media/$fileName-600.webp"
+    convert $f -resize 600 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "images/$fileName-600.webp"
 
-    convert $f -resize 900 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "media/$fileName-900.webp"
+    convert $f -resize 900 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "images/$fileName-900.webp"
 
-    convert $f -resize 1200 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "media/$fileName-1200.webp"
+    convert $f -resize 1200 -quality 82 -define webp:lossless=true -define webp:auto-filter=true "images/$fileName-1200.webp"
 
 
     
@@ -24,12 +24,12 @@ do
 
     mogrify -format jpg -path dist/media/ -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off  $f
 
-    convert $f -resize 1200 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "media/$fileName-1200.jpg"
+    convert $f -resize 1200 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "images/$fileName-1200.jpg"
 
-    convert $f -resize 900 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "media/$fileName-900.jpg"
+    convert $f -resize 900 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "images/$fileName-900.jpg"
 
-    convert $f -resize 600 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "media/$fileName-600.jpg"
+    convert $f -resize 600 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "images/$fileName-600.jpg"
 
-    convert $f -resize 300 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "media/$fileName-300.jpg"
+    convert $f -resize 300 -filter Triangle -define filter:support=2 -unsharp 0.25x0.08+8.3+0.045 -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off "images/$fileName-300.jpg"
 
 done
