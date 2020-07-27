@@ -1,2 +1,8 @@
-# absticks
-A simple html website for AB Sticks
+# Absticks
+
+A simple html template for ABSticks
+
+## Requirements
+
+- imagemagick to create images
+- node 14 to launch server
