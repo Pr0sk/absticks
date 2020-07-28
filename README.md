@@ -6,3 +6,12 @@ A simple html template for ABSticks
 
 - imagemagick to create images
 - node 14 to launch server
+
+## Lancer serveur
+
+`nodejs server.mjs`
+
+## Compiler images
+
+`./images.sh`
+
