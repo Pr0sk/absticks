@@ -15,3 +15,6 @@ A simple html template for ABSticks
 
 `./images.sh`
 
+## Ouvrir dossier Ubuntu 
+
+`explorer.exe .`
