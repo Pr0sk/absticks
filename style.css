@@ -131,6 +131,7 @@ nav  .logo {
 article {
     grid-column-start: 2;
     margin-top: 5rem;
+    margin-right: 5rem;
     background: white;
 }
 
@@ -159,6 +160,7 @@ article picture:hover {
 footer {
     grid-column-start: 2;
     margin-bottom: 4rem;
+    margin-right: 5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
