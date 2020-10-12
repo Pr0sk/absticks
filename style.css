@@ -157,8 +157,44 @@ article picture:hover {
     transition: .25s;
 }
 
+/* A propos */
+
+article picturepropos {
+    padding:0;
+    margin:1rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+article picturepropos:hover {
+    filter: saturate(200%);
+    transition: .25s;
+    display: flex;
+    justify-content: center;
+
+}
 
 
+articleprop propos {
+    max-width: 35rem;
+    display : block;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    text-align: justify;
+    
+}
+
+articleprop {
+    margin-right: 5rem;
+    background: white;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 /* footer */
 
@@ -229,6 +265,7 @@ footer li {
     article {
         margin-top:0;
     }
+
 
     article p,
     article h1,
