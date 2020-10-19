@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
 
 :root {
     --background: white;
@@ -141,7 +142,6 @@ article {
 }
 
 article p {
-    max-width: 60rem;
     display: block;
     margin: 1rem 0;
     font-size: 1.8rem;
