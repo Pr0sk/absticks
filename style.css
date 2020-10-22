@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
 
+@font-face {
+    font-family: "klartext_mono";
+    src: url("CSS/Fonts/klartext_mono.eot") format("eot");
+    src: url("CSS/Fonts/klartext_mono.ttf") format("ttf"),
+    url("CSS/Fonts/klartext_mono.woff") format("woff"),
+    url("CSS/Fonts/klartext_mono.woff2") format("woff2"),
+    url("CSS/Fonts/klartext_mono.svg#filmename") format("svg");
+    }
+
 :root {
     --background: white;
     --neutral-10: hsl(0, 0%, 13%);
@@ -24,7 +33,7 @@ body {
     font-size: 1.6rem;
     margin:0;
     padding:0;
-    color:var(--neutral-7);
+    color:var(--neutral-9);
     background:var(--background);
 }
 
@@ -82,7 +91,7 @@ main {
 
 
 nav {
-    font-family: 'Roboto';
+    font-family: 'Courier Prime';
     text-align: right;
     position: fixed;
     display: flex;
@@ -105,13 +114,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color:var(--neutral-5);
-    font-weight: thin;
+    color:var(--neutral-6);
+    font-weight: regular;
 }
 
 nav a.active {
     text-decoration: none;
-    color:var(--neutral-8)
+    color:var(--neutral-10)
 }
 
 nav  .logo {
@@ -125,12 +134,12 @@ nav  .logo {
     margin: .5rem;
 }
 
+
 .social {
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
 }
-
 
 /* Main content */
 
@@ -142,8 +151,9 @@ article {
 }
 
 article p {
+    font-family : 'klartext_mono';
     display: block;
-    margin: 1rem 0;
+    margin: 1rem 0 5rem;
     font-size: 1.8rem;
 }
 
