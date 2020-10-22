@@ -132,7 +132,15 @@ nav  .logo {
 .social svg {
     max-width: 2rem;
     margin: .5rem;
+    fill:var(--neutral-7);
+    transition: 0.7s;
 }
+
+.social svg:hover {
+    fill:var(--neutral-10);
+    transition: 0.7s;
+}
+
 
 
 .social {
